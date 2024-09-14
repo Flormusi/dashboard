@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="dashboard">
+        <h1>Dashboard</h1>
+        <div class="cards">
+            <div class="card">
+                <h2>Total Income</h2>
+                <p>$33,328.12</p>
+                <p class="change">+12.24% Compared to last month</p>
+            </div>
+            <div class="card">
+                <h2>Profit</h2>
+                <p>$8,583.09</p>
+                <p class="change">-2.63 Compared to last month</p>
+            </div>
+            <div class="card">
+                <h2>Total Views</h2>
+                <p>52,234.32</p>
+                <p class="change">+1.46% Compared to last month</p>
+            </div>
+            <div class="card">
+                <h2>Conversion Rate</h2>
+                <p>6.12%</p>
+                <p class="change">+8.75% Compared to last month</p>
+            </div>
+        </div>
+
+        <div class="charts-container">
+            <div class="chart">
+                <h2>Sales Overview</h2>
+                <canvas id="salesChart" width="400" height="200"></canvas>
+            </div>
+            <div class="chart">
+                <h2>Sales by Region</h2>
+                <canvas id="regionChart" width="400" height="200"></canvas>
+            </div>
+        </div>
+        
+        <h2>Registered Users</h2>
+        <div class="user-stats">
+            <p>Total Users: <strong>3,201</strong></p>
+        </div>
+
+        <h2>List of Integration</h2>
+        <table>
+            <tr>
+                <th>Application</th>
+                <th>Type</th>
+                <th>Rate</th>
+                <th>Profit</th>
+            </tr>
+            <tr>
+                <td>Stripe</td>
+                <td>Finance</td>
+                <td>33%</td>
+                <td>$10,998.28</td>
+            </tr>
+            <tr>
+                <td>Zapier</td>
+                <td>CRM</td>
+                <td>27%</td>
+                <td>$8,998.59</td>
+            </tr>
+            <tr>
+                <td>Shopify</td>
+                <td>Marketplace</td>
+                <td>40%</td>
+                <td>$13,331.24</td>
+            </tr>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

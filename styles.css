@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 20px;
+}
+
+.dashboard {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    flex: 1;
+    margin: 0 10px;
+}
+
+.charts-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.chart {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+#salesChart {
+    width: 100% !important; /* Hace que el gráfico ocupe todo el espacio disponible */
+    height: 300px;          /* Ajusta la altura del gráfico de ventas */
+}
+
+#regionChart {
+    width: 100% !important; /* Hace que el gráfico ocupe todo el espacio disponible */
+    height: 200px;          /* Ajusta la altura del gráfico de ventas por región */
+}
+
+.chart:first-child {
+    flex: 2; /* Hace que el gráfico de Sales Overview sea el doble de ancho */
+}
+
+.chart:last-child {
+    flex: 1; /* Hace que el gráfico de Sales by Region sea más pequeño */
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
